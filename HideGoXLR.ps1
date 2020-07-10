@@ -27,7 +27,6 @@ while (($attempts -gt 0) -or ($keepAlive -eq $true)) {
 
         # We'll Hide the window through its handle
         $Win32ShowWindowAsync::ShowWindowAsync($_, 0) | Out-Null
-        break;
     }
 
     Write-Output "Attempts remaining: $attempts, sleeping for $sleep, keep alive: $keepAlive"
