@@ -12,3 +12,14 @@ The script will try 3 times, with 10 second intervals. If you find that the timi
 
 ### Logging
 In case anything seems off, you can find a log at `%TEMP%\StartupLog.txt` which holds the output of the startup command
+
+### The solution to "execution of scripts is disabled on this system"
+If the script doesn't seem to run, inspect the log from above. Changes are you might find a message like "execution of scripts is disabled on this system".
+
+In that case run this command in a PowerShel terminal
+
+```powershell
+Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser
+```
+
+This will allow scripts to run for the current user. **Note:** make sure you understand what this does and what the (security) implications are. More information in the [Docs](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-7).
