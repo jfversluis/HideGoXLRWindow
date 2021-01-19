@@ -1,1 +1,1 @@
-CreateObject("Wscript.Shell").Run "%APPDATA%\HideGoXLR_startup", 0, True
+CreateObject("Wscript.Shell").Run """%APPDATA%\HideGoXLR_startup""", 0, True
