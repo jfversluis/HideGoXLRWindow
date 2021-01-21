@@ -1,1 +1,1 @@
-PowerShell -NoProfile -Command "%APPDATA%\HideGoXLR.ps1" >> "%TEMP%\StartupLog.txt" 2>&1
+cd %APPDATA% && PowerShell -NoProfile -Command ".\HideGoXLR.ps1" >> "%TEMP%\StartupLog.txt" 2>&1
