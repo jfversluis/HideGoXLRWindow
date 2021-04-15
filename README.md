@@ -1,5 +1,7 @@
 # HideGoXLRWindow
  
+## NOTE: AS OF VERSION 1.3.3.130+ this is now built-in functionality (see #4)
+
 This little solution hides the GoXLR App window on startup since there is no way to do that from the software itself.
 
 ## How To Install
